@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <!--Stylesheets start here-->        
+        <link href="../css/jquery-ui-1.8.9.custom.css" media="screen" rel="Stylesheet" type="text/css"/>
+        <link href="../css/screen.css" media="screen" rel="Stylesheet" type="text/css"/>
+
+        <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="ie_screen.css" />
+        <![endif]-->
+
+         <!--Stylesheets end here-->
+
+        <!-- JavaScripts starts here -->
+        
+
+
+      <script type="text/javascript" src="../js/jquery-latest.pack.js"></script>
+      <script>
+
+$(document).ready(function() {	
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(2000); 
+	
+	});
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	
+});
+
+</script>
+
+        <!-- JavaScripts end here -->
+
+
+        <title>Bloomberg Businessweek Edge</title>
+    </head>
+    <body id="magazine_article"  data-version-description="base">
+	
+	 <!-- Modal Window with faded background content starts here -->
+    <div id="boxes">
+    <div id="dialog" class="window">
+<table  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="751" height="9" background="../css/images/modal_window_top.gif" valign="top"></td>
+  </tr>
+  <tr>
+    <td height="291" valign="top" background="../css/images/modal_window_middle.gif"><div id="mvmargin">
+    <a href="#" class="close"><img src="../css/images/icon_close.gif" alt="CLOSE" hspace="10" align="right" /></a>   
+    <div class="spacer"></div>
+	
+       <img src="../css/images/stripes.gif" hspace="2" align="absmiddle"/><span class="mvdate">04/03/11 issue</span>
+       <div class="spacer"></div>
+       
+   <div class="mvtxtbold">Financial/Business Acumen: “The Power of Cloud” p. 73</div>
+  <div class="spacer"></div>
+     In many nations, economies that can’t generate enough jobs to absorb their young people have created an entire generation of the disaffected, unemployed, or underemployed (including a growing number of recent college graduates) for whom the post-crash economy has little to offer. Instability will result if these young people don’t find a place and society doesn’t harness their energy, intelligence, and enthusiasm. In addition, the world is aging, and in many countries the young are being crushed by a gerontocracy of older workers who stay in the better jobs as long as possible and then retire and demand pensions that the younger generation will be forced to shoulder.</p>
+     <div class="spacer"></div>
+   <p><span class="mvtitletxt">Key Learning Points:</span>       </p>
+   <ul class="listone">
+     <li>High unemployment can stifle job creation and fuel inflation. </li>
+     <li>When there is instability, commodity prices tend to rise. </li>
+      <li >Hoarding and not investing are common responses to instability. <br />
+      </li>
+   </ul>
+     <div class="spacer"></div>
+  Read this article about some other possible consequences of instability:<br />
+     http://www.businessweek.com/ap/financialnews/D9L6H4V80.htm</p>
+        <div class="spacer"></div>
+        <span class="mvtitletxt">Question 1: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet sapien nec nunc mattis sollicitudin. 
+     Duis mattis sem non metus eleifend a rhoncus nisi interdum. 
+ <div class="spacer"></div><div class="spacer"></div>
+    
+    <span class="mvtitletxt">Answers:    </span><br />
+   Mauris enim dolor, lacinia nec tristique a, consequat eget mi.<br />
+  Nullam eros sapien, condimentum vitae porttitor a, facilisis nec leo.<br />
+   Donec quis lorem in tellus mollis imperdiet. Donec vitae pellentesque sem. <br />
+    Pellentesque aliquet, urna et placerat aliquam, sem sem imperdiet tellus, eu cursus magna purus quis ipsum.
+     <div class="spacer"></div> <div class="spacer"></div>
+   <span class="mvtitletxt">Question 2: </span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet sapien nec nunc mattis sollicitudin. 
+Duis mattis sem non metus eleifend a rhoncus nisi interdum. 
+    </div>   </td>
+  </tr>
+  <tr>
+    <td background="../css/images/modal_window_bottom.gif">&nbsp;</td>
+  </tr>
+</table>
+</div>
+     <!-- Modal Window with faded background content ends here -->
+        <div class="padtop4"></div>
+
+
+<!--The block for the header display and search block with welcome and signout options starts here-->
+<div id="top_strip">
+  <div class="full_width_container">
+    <div class="bloombg_header"><img src="../css/images/logo_bb_edge_whitebg.png" alt="Bloomberg Businessweek Edge" /></div>
+    <span class="logininfo">Hello <a href="../Sign-in/Profile.html">John Doe</a> </span><span class="signout"><a href="#">Signout</a></span>
+    <div class="headerrightstrip"></div>
+    <div class="headerrightstrip_bg"> <br>
+        <br clear="all">
+        <form action="#" method="get">
+          <span>
+          <input name="search_text_input" type="text" id="search_text_input" value="SEARCH" />
+          </span>
+          <input type="submit" name="Submit" value="GO" class="submit_search_button" >
+        </form>
+    </div>
+  </div>
+  <!--The block for the header display and search block with welcome and signout options ends here-->
+</div>
+<!--Body container starts here-->	    
+<div class="full_width_container">
+<!--Page content title starts here-->
+  
+
+<!--Page content title ends here-->
+
+<div id="wrapadmin">
+  <div id="leftadmin">
+    <div id="panel">
+    <div id="panelheader_roles"><span class="HRManagertitleimg"><img src="../css/images/title_registration.png" width="155" height="25"></span></div>
+    <br clear="all">
+    <ul class="my_HRManager">
+      <li><a href="Bulk_User_regis.html">Bulk User Regisration </a></li>
+	  <li><a href="Unlock_account.html">Unlock </a></li>
+    </ul>
+    <br clear="all">
+  </div>
+    <br clear="all">
+    <div id="panel">
+      <div id="panelheader_comp"><span class="HRManagertitleimg"><img src="../css/images/title_abstracts.png" /></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="Create_Issue.html">Create Issue</a></li>
+        <li><a href="Create_Abstract.html">Create Abstract</a></li>
+        <li><a href="View_Abstract.html">View Abstracts</a></li>
+        <li><a href="Abstract_Activities.html">Abstract Activities</a></li>
+        <li><a href="Publish_Guides.html">Publish Guides</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+    <br clear="all">
+    <div id="panel">
+      <div id="panelheader_activ"><span class="HRManagertitleimg"><img src="../css/images/title_lesson_planning.png"></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="Create_Lesson.html">Create Lesson</a></li>
+        <li  class="currentblue">View Lesson</li>
+        <li><a href="Assign_Lesson.html">Assign Lesson</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+    <br clear="all">
+    <div id="panelbottom">
+      <div id="panelheader_report"><span class="HRManagertitleimg"><img src="../css/images/title_reporting.png"></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="View_Report.html">View Reports</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+  </div>
+  <div id="mainadmin">
+  <div class="fieldlist">
+<br>
+<div class="slashimg_blue"><img src="../css/images/title_slash_blue.png"></div>
+ <div class="contentTitleimg_blue"><img src="../css/images/title_lesson_planning.png"></div>
+<br>  <br clear="all">
+  <br>
+
+ <span class="ContentTitle"> Lesson Title : Lorem ipsum dolor sit amet, consectetur adipiscing elit eu blandit augue.</span>
+
+<br>
+<br>
+  <table width="100%" border="0" cellpadding="2" cellspacing="0"  class="borderHRManager">
+    <tr>
+      <th height="35" class="HRManagerth">Abstracts    </tr>
+    <tr>
+      <td>Financial/Business Acumen: <a href="#dialog" name="modal">“A Message from the Street,” p. 58</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Leadership Skills: <a href="#">“The Recession Is Gone, and the CEO Could Be Next,”p. 24</a></td>
+      </tr>
+    <tr>
+      <td>Personal Skills: <a href="#">“The Happiest Man in Detroit,” p. 66</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Strategies: <a href="#">“A European Shadow on China’s Solar Industry,” p. 44</a></td>
+      </tr>
+    <tr>
+      <td>Best Practices/Lessons Learned: <a href="#">“The Tragic Fall of Reserved Parking,” p. 81</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Global/Technology Trends: <a href="#">“Zero Revenue. Four Staffers. 1.75 Million Users,” p. 43</a></td>
+      </tr>
+    <tr>
+      <td>Financial/Business Acumen: <a href="#">“A Message from the Street,” p. 58</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Best Practices/Lessons Learned: <a href="#">“The Tragic Fall of Reserved Parking,” p. 81</a></td>
+      </tr>
+    <tr>
+      <td>Financial/Business Acumen: <a href="#">“A Message from the Street,” p. 58</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Strategies: <a href="#">“A European Shadow on China’s Solar Industry,” p. 44</a></td>
+      </tr>
+    <tr>
+      <td>Leadership Skills: <a href="#">“The Recession Is Gone, and the CEO Could Be Next,”p. 24</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Best Practices/Lessons Learned: <a href="#">“The Tragic Fall of Reserved Parking,” p. 81</a></td>
+      </tr>
+    <tr>
+      <td>Leadership Skills: <a href="#">“The Recession Is Gone, and the CEO Could Be Next,”p. 24</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Best Practices/Lessons Learned: <a href="#">“The Tragic Fall of Reserved Parking,” p. 81</a></td>
+      </tr>
+    <tr>
+      <td>Leadership Skills: <a href="#">“The Recession Is Gone, and the CEO Could Be Next,”p. 24</a></td>
+      </tr>
+    <tr class="alt">
+      <td>Leadership Skills: <a href="#">“The Recession Is Gone, and the CEO Could Be Next,”p. 24</a></td>
+      </tr>
+    <tr>
+      <td>Best Practices/Lessons Learned: <a href="#">“The Tragic Fall of Reserved Parking,” p. 81</a></td>
+      </tr>
+  </table>
+  <br>
+ 
+  </div>
+</div>
+</div>
+
+<div class="full_width_container">
+
+<div>&nbsp;</div>
+
+  </div>    
+<!--Footer starts here-->
+<div id="branding_footer" class="footer"> <a href="http://www.bloomberg.com/"  id="bb_logo"></a>
+    <div class="full_width_container_blue"> <br clear="all">
+        <br clear="all">
+        <ul>
+          <li><a href="http://www.businessweek.com/terms.html">TERMS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/privacy.htm">PRIVACY</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/ethics.htm">ETHICS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/contact.htm">CONTACT</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="#">FAQS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li class="last"><a href="#">HELP</a></li>
+        </ul>
+      <br/>
+        <p class="copyright">©2011 BLOOMBERG L.P. </p>
+    </div>
+</div>
+<!--Footer ends here-->
+<!-- Mask to cover the whole screen for modal window-->
+<div id="mask"></div>
+</div>
+    </body>
+</html>
+

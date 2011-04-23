@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <!--Stylesheets start here-->        
+        <link href="../css/jquery-ui-1.8.9.custom.css" media="screen" rel="Stylesheet" type="text/css"/>
+        <link href="../css/screen.css" media="screen" rel="Stylesheet" type="text/css"/>
+
+        <!--[if IE]>
+                <link rel="stylesheet" type="text/css" href="ie_screen.css" />
+        <![endif]-->
+
+         <!--Stylesheets end here-->
+
+        <!-- JavaScripts starts here -->
+        
+
+	  <script type="text/javascript" src="../js/dropdown.js"></script>
+              <script type="text/javascript" src="../js/jquery-latest.pack.js"></script>
+ <script>
+
+$(document).ready(function() {	
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(1000);	
+		$('#mask').fadeTo("slow",0.8);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(2000); 
+	
+	});
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	
+});
+
+</script>
+
+        <!-- JavaScripts end here -->
+
+
+        <title>Bloomberg Businessweek Edge</title>
+    </head>
+    <body id="magazine_article"  data-version-description="base">
+    
+     <div id="boxes1">
+    <div id="dialog" class="window">
+<table  border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="751" height="9" background="../css/images/modal_window_top.gif" valign="top"></td>
+  </tr>
+  <tr>
+    <td height="291" valign="top" background="../css/images/modal_window_middle.gif"><div id="mvmargin">
+    <a href="#" class="close"><img src="../css/images/icon_close.gif" alt="CLOSE" hspace="10" align="right" /></a>   
+    <div class="spacer"></div>
+	
+       <img src="../css/images/title_addto_lesson_plan.png" hspace="2" align="absmiddle"/>
+       <div class="spacer"></div>
+       
+  <table width="100%" class="borderHRManager"  border="0" cellspacing="0" cellpadding="0" >
+				<tr >
+                  <th colspan="2"  class="HRManagerth">“The Repair Bills Arrive from the Housing Boom” . p.20</th>
+	        </tr>
+		  </table>
+			 <div class="scrollTableContainer">
+			  <table width="100%"    border="0" cellspacing="0" cellpadding="0" >
+                <tr class="alt1">
+                      <td width="33"><span class="adminformtxtsmall">
+                        <input name="checkbox" type="checkbox"/>
+                        </span></td>
+                  <td width="557"><a href="#">Select All Lessons</a></td>
+                </tr>
+                <tr class="alt">
+                  <td><span class="adminformtxtsmall">
+                    <input name="checkbox2" type="checkbox"/>
+                    </span></td>
+                  <td><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></td>
+              </tr>
+                <tr class="alt1">
+                  <td><span class="adminformtxtsmall">
+                    <input name="checkbox3" type="checkbox"/>
+                    </span></td>
+                  <td><a href="#">Integer aliquet ultricies velit, a malesuada eros tincidunt sit amet.</a></td>
+              </tr>
+                <tr class="alt">
+                  <td><span class="adminformtxtsmall">
+                    <input name="checkbox4" type="checkbox"/>
+                    </span></td>
+                  <td><a href="#">Pellentesque id lacus vel sem ultrices fermentum eget sit amet sapien.</a></td>
+              </tr>
+                <tr class="alt1">
+                  <td><span class="adminformtxtsmall">
+                    <input name="checkbox5" type="checkbox"/>
+                    </span></td>
+                  <td><a href="#">Nulla auctor nibh vitae magna tincidunt quis tincidunt odio facilisis. </a></td>
+                </tr>
+                <tr class="alt">
+                  <td><span class="adminformtxtsmall">
+                    <input name="checkbox6" type="checkbox"/>
+                    </span></td>
+                  <td><a href="#">Donec laoreet diam sit amet magna ullamcorper varius. </a></td>
+                </tr>
+				 </tbody>
+               </table>
+          </div>
+          
+			  <br>  <br>
+    <div align="center">
+            <a href="#"><img src="../css/images/button_add.png"  border="0"></a>&nbsp;</div>   </td>
+  </tr>
+  <tr>
+    <td background="../css/images/modal_window_bottom.gif">&nbsp;</td>
+  </tr>
+</table>
+</div>
+     <!-- Modal Window with faded background content ends here -->
+        <div class="padtop4"></div>
+
+
+<!--The block for the header display and search block with welcome and signout options starts here-->
+<div id="top_strip">
+  <div class="full_width_container">
+    <div class="bloombg_header"><img src="../css/images/logo_bb_edge_whitebg.png" alt="Bloomberg Businessweek Edge" /></div>
+    <span class="logininfo">Hello <a href="../Sign-in/Profile.html">John Doe</a> </span><span class="signout"><a href="#">Signout</a></span>
+    <div class="headerrightstrip"></div>
+    <div class="headerrightstrip_bg"> <br>
+        <br clear="all">
+        <form action="#" method="get">
+          <span>
+          <input name="search_text_input" type="text" id="search_text_input" value="SEARCH" />
+          </span>
+          <input type="submit" name="Submit" value="GO" class="submit_search_button" >
+        </form>
+    </div>
+  </div>
+  <!--The block for the header display and search block with welcome and signout options ends here-->
+</div>
+<!--Body container starts here-->	    
+<div class="full_width_container">
+<!--Page content title starts here-->
+  
+
+<!--Page content title ends here-->
+
+<div id="wrapHR">
+  <div id="leftHR">
+    <div class="leftnavtop"></div>
+    <div class="leftnavmiddle_hr">
+      <div class="HRleftnavbordergreen"></div>
+      <div class="HRissue">
+        <div class="HRissueimg"><img src="../css/images/img_issues.png"></div>
+        <div class="HRissuetext"><br>
+          Mar 28, 2011<br>
+          Got a better Idea?</div>
+        <div class="HRissuearrow"><a href="#"><img src="../css/images/arrow_issue_left.png" border="0"></a><img src="../css/images/arrow_issue_right.png" hspace="5"></div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+    <div class="leftnavbottom_hr"></div>
+    <br clear="all">
+    <div id="panel">
+      <div id="panelheader_comp"><span class="HRManagertitleimg"><img src="../css/images/title_competencies.png"></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="Leadership_skills.html">Leadership Skills</a></li>
+        <li class="currentpink">Financial/Business Acumen</li>
+        <li><a href="Strategies.html">Strategies</a></li>
+        <li><a href="Personal_skills.html">Personal Skills</a></li>
+        <li><a href="Best_practices.html">Best Practices/Lessons Learned</a></li>
+        <li><a href="Global_Trends.html">Global/Technology Trends</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+    <br clear="all">
+    <div id="panel">
+      <div id="panelheader_activ"><span class="HRManagertitleimg"><img src="../css/images/title_activities.png"></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="Action_Learning_activities.html">Action Learning</a></li>
+        <li><a href="Case_study.html">Case Study</a></li>
+        <li><a href="Outside_expert.html">Outside Expert</a></li>
+        <li><a href="Self_assessment.html">Self Assessment</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+    <br clear="all">
+    <div id="panel">
+      <div id="panelheader_lp"><span class="HRManagertitleimg"><img src="../css/images/title_lesson_planning.png"></span></div>
+      <br clear="all">
+      <ul class="my_HRManager">
+        <li><a href="#">Create Lesson</a></li>
+        <li><a href="View_Lesson_planning.html">View Lessons</a></li>
+        <li><a href="#" >Assign Lesson</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+    <br clear="all">
+    <div id="panelbottom">
+      <div id="panelheader_report"><span class="HRManagertitleimg"><img src="../css/images/title_reporting.png"></span></div>
+      <ul class="my_HRManager">
+        <br clear="all">
+        <li><a href="View_reports.html">View Reports</a></li>
+      </ul>
+      <br clear="all">
+    </div>
+  </div>
+  <div id="mainHR">
+<br>
+<div class="HRBreadcrumb"><a href="Leadership_skills.html">Competencies</a> > <span class="current">Financial / Business Acumen</span></div>
+<br clear="all">
+<div class="slashimg_pink"><img src="../css/images/title_slash_pink.png"></div>
+ <div class="contentTitleimg_pink"><img src="../css/images/title_competencies.png" alt="Competencies" ></div>
+ <br clear="all"> <br clear="all">
+  <div class="fieldlistHR1">
+
+ 
+      <div class="fld_list_HR1">
+	  <div class="HRcontent">
+       <div class="HRcontentleft">
+       <br clear="all">
+      <span class="HRtitletxtblue">“Building a Better Reactor” p. 58</span><br clear="all"><br clear="all">
+		
+        <p>Hydrowatt specializes in generating electricity from turbines in aqueducts and was encouraged by generous renewable energy incentives. A Europe-wide push to get 20% of energy from renewable sources by 2020 has led governments to finance projects through incentives and so-called feed-in tariffs, which require 
+utilities to pay above-market rates for green power. </p>
+<br clear="all"><br clear="all">
+<div class="buttonaddto"> <a href="#dialog" name="modal">+ Add to Lesson Plan</a></div>
+       </div>
+	    <div class="HRimgright"><img src="../css/images/img_issues_large.png"><br> 03/25/11 
+	    </div>
+	  
+	  
+   	    </div>
+</div>		   
+  </div>
+<div class="horizontalline">&nbsp;</div>
+<!--second level content starts here -->
+  <div class="fieldlistHR">
+<br>
+	  <div class="HRcontent">
+<div class="HRcontentleft"> <br clear="all">
+    <span class="HRtitletxtblue">“Crisis in Japan” pg. 73</span><br clear="all">
+  <br clear="all">
+    <p>Japan faces unprecedented times. But even amid radiation and rubble, it is not hopeless. Plus: America needs an honest debate over nuclear power. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate condimentum nulla, lacinia ullamcorper massa sollicitudin ut. Aliquam tincidunt 
+      ultricies rhoncus. Vivamus nec vehicula metus. </p>
+    <br clear="all">
+  <br clear="all">
+    <div class="buttonaddto"> <a href="#">+ Add to Lesson Plan</a></div>
+</div>
+<div class="HRimgright"><img src="../css/images/img_crisis_japan_large.png"><br> 03/21/11 
+	    </div>
+	  </div>
+	   	  
+  </div>
+   <div class="horizontalline">&nbsp;</div>
+<div class="fieldlistHR">
+<br>
+
+	  <div class="HRcontent">
+<div class="HRcontentleft"> <br clear="all">
+    <span class="HRtitletxtblue">“Amazon Crusader. Chevron Pest. Fraud?” pg. 22</span><br clear="all">
+    <br clear="all">
+  <p>Attorney Steven Donziger won an $18 billion pollution verdict against Chevron. But is he clean enough to collect? Nunc laoreet interdum mauris at suscipit. Nam pharetra turpis malesuada ipsum pellentesque congue. Etiam cursus, felis sit amet venenatis faucibus, risus turpis fermentum lectus, vitae bibendum elit nisl nec augue. . </p>
+    <br clear="all">
+  <br clear="all">
+      <div class="buttonaddto"> <a href="#">+ Add to Lesson Plan</a></div>
+</div><div class="HRimgright"><img src="../css/images/img_junglejustice_large.png"><br> 03/14/11 
+	    </div>
+	  </div>
+		  
+  </div>
+
+  <div class="horizontalline">&nbsp;</div>
+  <br clear="all">
+  <div id="admin_pagination">
+<a href="#">&lt; PREV</a><span class="active_admin_link">1</span><a href="#2">2</a><a href="#3">3</a><a href="#4">4</a><a href="#5">5</a><a href="#forwaed">NEXT &gt;</a></div>
+</div>
+
+</div>
+
+
+<div class="full_width_container">
+<div>&nbsp;</div>
+  </div>    
+<!--Footer starts here-->
+<div id="branding_footer" class="footer"> <a href="http://www.bloomberg.com/"  id="bb_logo"></a>
+    <div class="full_width_container_pink"> <br clear="all">
+        <br clear="all">
+        <ul>
+          <li><a href="http://www.businessweek.com/terms.html">TERMS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/privacy.htm">PRIVACY</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/ethics.htm">ETHICS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="http://www.businessweek.com/contact.htm">CONTACT</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li><a href="#">FAQS</a></li>
+        </ul>
+      <span class="slash"><img src="../css/images/footer_slash.png" ></span>
+        <ul>
+          <li class="last"><a href="#">HELP</a></li>
+        </ul>
+      <br/>
+        <p class="copyright">©2011 BLOOMBERG L.P. </p>
+    </div>
+</div>
+<!--Footer ends here-->
+<!-- Mask to cover the whole screen for modal window-->
+<div id="mask"></div>
+</div>
+    </body>
+</html>
+

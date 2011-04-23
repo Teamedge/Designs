@@ -1,0 +1,637 @@
+/* resets */
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td { margin: 0; padding: 0; }
+
+
+table{border-collapse: collapse;border-spacing: 0;}
+ul,li{list-style: none; }
+fieldset, img{border:none;}
+/* end resets */
+
+/* clear fix */
+.clearfix:after { content: " "; display: block; height: 0; clear: both; visibility: hidden; line-height: 0; font-size: 0; }
+.clearfix {display: inline-block;}
+html[xmlns] .clearfix {display: block;}
+* html .clearfix {height: 1%;}
+.clear { clear: both; visibility: hidden; overflow: hidden; margin: 0; padding: 0; height: 0; line-height: 0;}
+/* end clear fix */
+
+body {
+    font-size:100%;
+    line-height:1.125em; 
+    font-family: Helvetica,Arial,sans-serif;
+    color:#333;
+	margin:0px;
+
+}
+a{color:#005c96; text-decoration:none;  outline:none;}
+
+a:hover, a:active{ text-decoration:underline;}
+/* general ui overrides */
+
+/* ad module styles */
+
+.full_width_container{
+    width:981px;
+    margin:0 auto;
+}
+/* Header section starts here */
+.padtop4 {padding-top:5px;}
+.bloombg_header{float:left;margin-top:15px;background:url("images/header_admin.png") no-repeat 0 0 transparent;}
+
+.headerrightstrip_bg {float:right; background:url("images/header_right_strip_bg.png") repeat 0 0 transparent; height:91px; width:510px;}
+
+.headerrightstrip {float:left; width:46px; margin-left:139px; background:url("images/header_right_strip.png") repeat 0 0 transparent; height:91px;}
+
+#top_strip{/*background: url("images/header_top_bg.png");*/ height:107px;paddding-left:115px;}
+#top_strip form{ display: block; float:right; margin:5px 0 0 0; width:280px;}
+
+.searchverticval { height:30px;}
+.logininfo { color:#000000;padding-top:0px;font-size:12px;font-weight:bold; margin: 0px 0px 0px 200px;}
+.signout { color:#000000;padding-top:0px;font-size:12px;font-weight:bold; margin: 0px 0px 0px 350px;}
+
+
+.submit_search_button{
+    background: url("images/button_search_bg.png") repeat-x ;
+	height: 22px;
+    width: 41px;
+	color:#FCD504;
+	font-weight:bold;
+   	margin-right:3px;
+	border:none;
+	margin-left:5px;
+	vertical-align:middle;
+	cursor:pointer;
+	
+}
+#top_strip form span{
+    float:left;
+    background-color: #1E1E1E;
+  
+}
+#top_strip form span input {
+    border: 1px solid #C0C0C0;
+    color: #7E7E7E;
+	vertical-align:middle;
+	font-weight:bold;
+    padding: 1px 0 1px 8px;
+    width: 220px;
+	height:20px;
+}
+#top_strip ul li{
+    float:left;
+    margin:5px 0 0 0;
+}
+#top_strip a{
+    color:#1E1E1E;
+    font-weight:bold;
+}
+
+#top_strip a#bx_top_link{
+    border:none;
+
+}
+#logo_bar {
+    height:65px;
+}
+
+
+/* Header section ends here */
+
+/* footer styles */
+.footer a{
+    color:#1E1E1E;
+    font-weight:bold;
+	vertical-align:top;
+}
+
+
+.footer .full_width_container_blue{
+	height:41px;
+	width:981px;
+	clear:both;
+	background:url("images/footer_logo_strip_activitie.png") repeat scroll 0 0 transparent;
+	
+}
+.footer .full_width_container_pink{
+	height:41px;
+	width:981px;
+	clear:both;
+	background:url("images/footer_logo_strip_pink.png") repeat scroll 0 0 transparent;
+	
+}
+.footer .full_width_container_green{
+	height:41px;
+	width:981px;
+	clear:both;
+	background:url("images/footer_logo_strip_green.png") repeat scroll 0 0 transparent;
+	
+}
+
+.footer .full_width_container_orange{
+	height:41px;
+	width:981px;
+	clear:both;
+	background:url("images/footer_logo_strip_orange.png") repeat scroll 0 0 transparent;
+	
+}
+
+.footer .full_width_container_grey{
+	height:41px;
+	width:981px;
+	clear:both;
+	background:url("images/footer_logo_strip_grey.png") repeat scroll 0 0 transparent;
+	
+}
+
+
+#branding_footer{
+	width:100%;
+   	clear:both;
+	bottom:0;
+	left:0px;
+}
+
+a#bb_logo{
+   	width:204px;
+	height:22px;
+	float:right;
+	vertical-align:top;
+    background:url("images/footer_logo_bb.png") repeat scroll 0 0 transparent;
+	margin:0px 0px 0 8px;
+   
+}
+
+#branding_footer ul{
+    margin-top:12px;
+}
+#branding_footer ul li{
+    margin:20px 0px 0px 10px;
+	float:left;
+    margin-right: 3px;
+    padding-right: 3px;
+    font-size:11px;
+}
+
+.slash {float:left; vertical-align:middle; padding-top:18px;}
+
+#branding_footer ul li.last{
+
+    border-right: none;
+}
+p.copyright{
+    float:right;
+    padding-top: 0;
+    text-transform: uppercase;
+    color: #5F6062;
+	font-weight:bold;
+    font-size: 12px;
+}
+/* end footer styles */
+
+
+/* content section starts here */
+.fieldlist{
+
+width:756px;
+
+padding:0 20px;
+font-size:12px;
+}
+.fld_list_details{
+background:#f9f9f9;
+height:400px;
+padding:10px;
+
+}
+
+.blue_text_link{    
+font-size:14px;
+color:#064599;
+font-family:arial,helvetica;
+font-weight:bold;
+vertical-align:top;
+}
+
+
+/* HR Manager CSS */
+.fieldlistHR{
+float:right;
+width:760px;
+font-size:12px;
+
+}
+.popupContainer{
+
+font-size:12px;
+
+}
+.fieldlistHR1{
+float:right;
+min-height:210px;
+width:760px;
+background-color:#FAFAFA;
+}
+.fld_list_HR{background-color:#f2f2f2; width:760px; }
+
+#wrapwide {width:981px; height:auto;font-family:Arial,Helvetica;font-size:12px;margin:40px 0px 0px 0px;}
+#wrapgenericwide {width:981px; height:auto; font-family:Arial,Helvetica;font-size:12px;margin:40px 0px 0px 0px; color:#000000;}
+#wrapwidecontent {width:920px; height:auto;font-family:Arial,Helvetica;font-size:12px;background-color:#f2f2f2; border-top:1px solid #ccc; border-bottom:1px solid #ccc;margin:10px 0px 0px 0px; padding:20px 0 0 60px;}
+.signinform_label{text-align:left;width:150px;font-weight:normal; float:left;padding:5px;}
+.newregisformleft{ float:left;height:auto; width:50%;}
+.newregisformright{float:right;height:auto; width:50%;}
+.newregisform_label{text-align:left;font-weight:normal; }
+
+.signin_smallcont { font-size:11px;padding-left:25px;}
+.signin_checkbox {float:left;}
+.signin_formbut { margin-left:160px;}
+#wrapHR {width:981px;margin:0 auto;height:auto;font-family:Arial,Helvetica;font-size:12px;}
+#leftHR {float:left; margin-top:15px; width:205px; }
+#mainHR {float:left;width:756px;padding:0px;position:relative;margin-top:15px; margin-left:20px;}
+
+/*HR Manager Left Navigation content panel starts here */
+.leftnavtop {background-image:url("images/left_nav_top_issues_hr.png"); height:36px; width:205px;float:left;}
+.leftnavtop_admin {background-image:url("images/left_nav_top_admin_hr.png"); height:32px; width:205px; float:left;}
+.leftnavtop_hr {background-image:url("images/left_nav_top_hr.png"); height:8px; width:198px; float:left;}
+.leftnavmiddle_hr{background-image:url("images/left_nav_middle_hr.png");width:205px; margin-top:-5px;background-repeat:repeat;clear:both; }
+.leftnavbottom {background-image:url("images/left_nav_bottom_hr.png"); height:8px; width:205px;float:left; }
+.leftnavbottom_hr {background-image:url("images/left_nav_bottom_hr.png"); height:8px; width:205px;float:left; }
+
+.HRtitle {margin-left:8px;padding-bottom:5px;}
+.HRtitletxt { font-weight:bold; font-size:15px; color:#56595C;}
+.HRtitletxtblue { font-weight:bold; font-size:15px; color:#064599;}
+.HRtitletxt { font-weight:bold; font-size:15px;}
+.HRissue {margin:5px 0px 5px 5px; float:left;}
+.HRissueimg {float:left;}
+.HRissuetext {float:left; margin-left:5px; font-size:11px; color:#064599;}
+.HRissuearrow {float:left; margin-left:5px; margin-top:30px; width:60px;}
+.HRleftnavbordergreen {background:#76B900; height:6px; margin-top:3px;margin-bottom:3px;}
+
+#panel {width:205px;float:left;	border: 1px solid #BCBCBC;}
+#panelbottom {width:205px;float:left;	border-top: 1px solid #BCBCBC;border-right: 1px solid #BCBCBC;border-bottom: 1px solid #BCBCBC; border-left: 1px solid #BCBCBC;}
+
+#panelheader_roles {width:205px;
+			margin:0px;
+			float:left;
+			font-size: 10px;
+			padding:5px 0px 0px 0px;
+			font-weight:bold;
+			padding-bottom:5px;
+			color:#ffffff;
+			background:#76B900;
+			height:30px;
+			}		
+#panelheader_comp {width:205px;
+			margin:0px;
+			float:left;
+			font-size: 10px;
+			padding:5px 0px 0px 0px;
+			font-weight:bold;
+			padding-bottom:5px;
+			color:#ffffff;
+			background:#890857;
+			height:30px;
+			}
+			#panelheader_activ {width:205px;
+			margin:0px;
+			float:left;
+			font-size: 10px;
+			padding:5px 0px 0px 0px;
+			font-weight:bold;
+			padding-bottom:5px;
+			color:#ffffff;
+			background:#00ABBE;
+			height:30px;
+			}
+			#panelheader_lp {width:205px;
+			margin:0px;
+			float:left;
+			font-size: 10px;
+			padding:5px 0px 0px 0px;
+			font-weight:bold;
+			padding-bottom:5px;
+			color:#ffffff;
+			background:#EC8000;
+			height:30px;
+			}
+			#panelheader_report {width:205px;margin:0px;float:left;	font-size: 10px;padding:5px 0px 0px 0px;font-weight:bold;padding-bottom:5px;color:#ffffff;
+			background:#56595C;
+			height:30px;
+			}
+			
+	
+.HRManagertitleimg {margin-left:8px; margin-top:8px;  }
+
+.my_HRManager li{font-family:Arial,Helvetica;font-size:12px; color:#1E1E1E; font-weight:bold; overflow: hidden;padding-top:5px;  margin-left:10px; margin-top:10px; }
+.my_HRManager li a{font-family:Arial,Helvetica;font-size:12px; color:#1E1E1E; font-weight:bold; }
+.my_HRManager li.currentblue{font-weight:bold; border-left:0px solid #BCBCBC; color:#00ABBE;}
+.my_HRManager li.currentpink{font-weight:bold; border-left:0px solid #BCBCBC; color:#890857;}
+.my_HRManager li.currentorange{font-weight:bold; border-left:0px solid #BCBCBC; color:#EC8000;}
+.my_HRManager li.currentgrey{font-weight:bold; border-left:0px solid #BCBCBC; color:#56595C;}
+.my_HRManager li.currentgreen{font-weight:bold; border-left:0px solid #BCBCBC; color:#76B900;}
+
+/* HR manager Left navigation content panel ends here */
+
+/* HR Manager content section panel starts here */
+.HRBreadcrumb {background:#F2F7F8; height:25px; padding-top:7px; padding-left:5px; font-weight:normal; color:#064599;	}
+.HRBreadcrumb  .current{background:#F2F7F8; height:25px; padding-top:7px; padding-left:5px; font-weight:bold; color:#000000; }
+
+.slashimg_blue {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_blue.png); width:13px; height:35px;}
+.slashimg_green {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_green.png); width:13px; height:35px;}
+.slashimg_pink {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_pink.png); width:13px; height:35px;}
+.slashimg_orange {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_orange.png); width:13px; height:35px;}
+.slashimg_grey {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_grey.png); width:13px; height:35px;}
+
+.contentTitleimg_blue {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_blue_bg.png);repeat-x; height:31px; width:743px; font-size:16px; padding-top:4px; font-weight:bold; color:#ffffff;}
+.contentTitleimg_pink {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_pink_bg.png);repeat-x; height:31px; width:743px; font-size:16px; padding-top:4px; font-weight:bold; color:#ffffff;}
+.contentTitleimg_green {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_green_bg.png);repeat-x; height:31px; width:743px; font-size:16px; padding-top:4px; font-weight:bold; color:#ffffff;}
+.contentTitleimg_orange {float:left; background-image:url(images/title_slash_orange_bg.png);repeat-x; height:31px; width:98%;  padding-top:4px;color:#ffffff;}
+.contentTitleimg_grey {float:left; font-size:12px; font-weight:bold;  background-image:url(images/title_slash_grey_bg.png);repeat-x; height:31px; width:743px; font-size:16px; padding-top:4px; font-weight:bold; color:#ffffff;}
+
+.contentTitlesmalltxt { float:right;font-size:16px; font-weight:bold; color:#000000;  margin-top:3px;}
+.searchresultsmalltxt {font-size:10px; font-weight:none; color:#000000; }
+.searchresultorangetxt {font-size:12px; font-weight:bold; color:#ec8000; }
+.HRcontent { float:left;}
+.HRcontentleft{float:left; padding-left:5px; width:620px; }
+.HRcontentleftuestions{float:left; padding-left:25px; width:650px;  }
+.HRcontentleft1{float:left; padding-left:5px; width:auto; }
+.HRimgright {  font-size:11px; color:#064599;  float:right; margin-right:5px;  margin-left:3px; margin-top:10px;text-align:center; color:#000000;}
+.buttonaddto {background-image:url("images/button_grey_addto.png");width:110px; height:17px; color:#FFFFFF; font-size:11px; padding-left:5px;}
+.buttonaddto a{ color:#FFFFFF; font-size:11px; text-decoration:none;}
+.buttonaddto a:hover{font-size:11px; text-decoration:underline;}
+.buttonassessment {background-image:url("images/button_grey_addto.png");width:110px; height:17px; color:#FFFFFF; font-size:11px;  float:right;}
+.buttonassessment a{ color:#FFFFFF; font-size:11px; text-decoration:none; vertical-align:top;}
+.buttonassessment a:hover{ color:#FFFFFF; font-size:11px; text-decoration:underline;}
+.content_HRManager li{font-family:Arial,Helvetica;font-size:14px; background:transparent url(images/right_arrow.gif) no-repeat scroll left 5px;color:#56595C; font-weight:bold; overflow: hidden;padding-left:8px; white-space:wrap; margin-left:10px; margin-top:7px; }
+
+.content_HRManager li a{color:#064599;font-weight:bold; font-size:14px;}
+.horizontalline { height:1px;  background-color:#7C7D7E; clear:both;}
+.horizontalline1 { height:5px;  background-color:#CCCCCC; clear:both;}
+.horizontalline2 { height:5px;  background-color:#CCCCCC;clear:both; }
+.horizontalline3 { height:1px;  background-color:#CCCCCC;clear:both; }
+
+.HRManagerth{ margin:0px;font-size:13px; font-weight:bold; background-image:url("images/th_bg_HRManager.png");repeat:no-repeat;	padding-left:5px;padding-top:5px; border: 1px solid #B3B3B3; min-height:20px; color:#000000; font-size:13px; text-align:left;}
+
+.borderHRManager  {font-size:13px; font-weight:none; padding-left:5px;padding-top:5px; border: 1px solid #B3B3B3; color:#000000; font-size:13px; }
+
+ th{ margin:0px;font-size:13px; font-weight:bold; background-color:#FDC745;	padding-left:5px;padding-top:5px; border: 1px solid #B3B3B3; height:25px; color:#5C4715; font-size:13px; text-align:left;}
+.borderHRManager td { margin:0px;font-size:12px; font-weight:none; padding-left:5px;padding-top:5px;  height:25px; color:#000000;}
+
+.square li{list-style: square; list-style-position:inside; }
+.squareintend li{list-style: square; list-style-position:inside; padding-left:15px; }
+.contentTitleimg1 { font-size:12px; font-weight:bold; float:left; }
+
+.contentTitleleft {float:left; font-size:13px; font-weight:bold; text-align:left;}
+.contentTitleimg { font-size:12px; font-weight:bold; text-align:right; padding-right:2px; }
+.contentTitleimg a{font-size:12px; font-weight:bold; color:#004077; text-align:right;  padding-right:2px; }
+.contentTitleimg a:hover{font-size:12px; font-weight:bold;  text-decoration:underline; text-align:right;padding-right:2px;  }
+
+.statusbarHRMgr {width:20%; background-color:#76B900; height:15px; float:left;  border: 1px solid #000000; font-weight:none; font-size:11px; color:#FFFFFF; padding-left:5px; vertical-align:top;}
+.timespent { float:right;  font-size:12px; font-weight:bold; margin-right:10px;}
+
+/* Admin content section CSS */
+
+#wrapadmin {width:981px;margin:0 auto;height:auto;font-family:Arial,Helvetica;font-size:12px;}
+#leftadmin {float:left;	margin-top:15px; width:205px;}
+
+#mainadmin {float:left;	width:756px;padding:0px;position:relative;margin-top:15px; }
+
+.fieldlistadmin{float:right;padding:0 25px;font-size:12px; }
+.fld_list_admin{background:#f9f9f9;padding:10px; min-height:250px;}
+.fld_list_report{ position:relative; width:756px;padding:0 20px;font-size:12px;}
+
+
+.admintitle {margin-left:30px;padding-bottom:10px;}
+.adminformtxtsmall {font-size:11px;}
+
+.admindrop{	width: 172px; 	padding: 1px;}
+
+.form_label{text-align:left;float:left;width:130px;font-weight:normal;padding-top:1px;padding-right:7px;}
+.form_label1{text-align:left;float:left;width:130px;font-weight:normal;padding-top:1px;padding-right:7px;}
+.form_label2{text-align:left;float:left;width:80px;font-weight:normal;padding-top:1px;padding-right:7px;}
+.form_labellist{text-align:left;float:left;font-weight:normal;padding-top:1px;padding-right:7px;}
+.form_labellist1{text-align:left;float:left;font-weight:normal;padding-top:1px;padding-right:7px;}
+.form_arrowbut{text-align:left;float:left;width:50px;font-weight:normal;margin-top:50px; margin-left:20px; padding-right:7px;}
+.form_but{float:left;width:110px; padding-top:4px;padding-right:7px; margin-left:155px;}
+.form_butcreatelesson{width:210px; padding-top:4px;padding-right:7px; margin-left:180px;}
+.form_but1{width:210px; padding-top:4px;padding-right:7px; margin-left:155px;}
+.form_butcreateabstract{width:350px; padding-top:4px;padding-right:7px; margin-left:135px;}
+select.center_pull {background:#ffffff none repeat scroll 0 0;     border:1px solid #7E7E7E;     color:#333333;     font-size:12px;     margin-bottom:4px;     margin-right:4px;     margin-top:4px;     width:160px; overflow:scroll;} 
+
+.border {font-size:13px; font-weight:none; padding-left:5px;padding-top:5px; border: 1px solid #727272; color:#000000; font-size:13px; }
+
+
+th{ margin:0px;font-size:13px; font-weight:bold; background-color:#FDC745;	padding-left:5px;padding-top:5px; border: 1px solid #32439C; height:25px; color:#5C4715; font-size:13px; text-align:left;}
+
+.border td { margin:0px;font-size:12px; font-weight:none; padding-left:5px;padding-top:5px;  height:25px; color:#000000;}
+
+table.dataTable {margin: 0;	widht:100%; padding: 0;border-bottom: 0px solid #727272;}
+
+table.dataTable th {margin-left: 10px;	min-height:25px;border-right: 1px solid #727272;border-top: 1px solid #727272;font-weight: normal;	padding: 4px 3px 3px 4px;
+	background: #FDC745;	font-weight: bold;}
+
+table.dataTable td {margin: 0;min-height:25px;padding: 5px 5px 5px 5px;}
+
+/* This makes the scrolling table work */
+
+div.scrollTableContainer {overflow: auto;height: 140px;	position:relative;border-left: 1px solid #B3B3B3;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+	
+/* The different widths below are due to the way the scroll bar is implamented */
+
+/* All browsers (but especially IE) */
+div.scrollTableContainer table {
+
+}
+/* Modern browsers (but especially firefox ) */
+html>/**/body div.scrollTableContainer table {
+}
+/* Modern browsers (but especially firefox ) */
+html>/**/body div.scrollTableContainer table>tbody {
+overflow-x: hidden;
+
+overflow-x: hidden;
+
+}
+
+div.scrollTableContainer thead tr {
+position:relative;
+
+top: expression(offsetParent.scrollTop); /*IE5+ only*/
+/* fixes the header being over too far in IE, doesn’t seem to affect FF */
+left: 0px;
+}
+
+/*prevent Mozilla scrollbar from hiding cell content*/
+div.scrollTableContainer td:last-child {}
+
+div.scrollTableContainer1 {
+	overflow: auto;
+	height: 240px;
+	position:relative;
+	border-left: 1px solid #B3B3B3;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	
+}
+/* The different widths below are due to the way the scroll bar is implamented */
+
+/* All browsers (but especially IE) */
+div.scrollTableContainer1 table {
+
+}
+/* Modern browsers (but especially firefox ) */
+html>/**/body div.scrollTableContainer1 table {
+}
+/* Modern browsers (but especially firefox ) */
+html>/**/body div.scrollTableContainer1 table>tbody {
+overflow-x: hidden;
+
+overflow-x: hidden;
+
+}
+
+div.scrollTableContainer1 thead tr {
+position:relative;
+
+top: expression(offsetParent.scrollTop); /*IE5+ only*/
+/* fixes the header being over too far in IE, doesn’t seem to affect FF */
+left: 0px;
+}
+
+/*prevent Mozilla scrollbar from hiding cell content*/
+div.scrollTableContainer1 td:last-child {}
+
+
+
+.alt td {background-color:#F5F5F5;height:22px;}
+.alt1 {background-color:#FFFFFF; height:30px;}
+.boldtxt{font-size:12px; font-weight:bold;margin-bottom:5px; color:#064599;}
+.ContentTitle {font-size:12px; font-weight:bold;}
+.ContentTitle {font-size:12px; font-weight:bold;}
+.titletxt {font-size:12px; font-weight:none; color:#000000;}
+.titletxtbold {font-size:12px; font-weight:bold; color:#000000; }
+.mvtxtbold {font-size:14px; font-weight:bold; coldolor:#000000;border-bottom: 2px solid #ec8000; vertical-align:middle;}
+#mvmargin {margin-left:20px; font-size:12px; font-weight:none; margin-right:10px;}
+.mvdateouter {vertical-align:middle; }
+.mvdate { font-size:12px; font-weight:bold;}
+.mvtitletxt {font-size:12px; font-weight:bold; color:#ec8000;}
+.listone ul li {font-family:Arial,Helvetica;font-size:19px; font-weight:bold;list-style-position: inside;list-style-image: url(images/previous_issue.gif);}
+.reportform {margin-left:100px; float:left;}
+.formbuttons {  float:right; margin-rigth:200px;}
+.spacer {height:10px;}
+.spacer1 {padding-left:7px; float:left;}
+.blackbox {background-color:#000000; width:756px;  height:22px; color:#FFFFFF; }
+.blackboxcontent { color:#FFFFFF;  margin-left:7px;  padding-top:2px;}
+.blackboxrefresh{ color:#FFFFFF;   margin-right:5px; margin-left:570px;  margin-top:-20px;float:right; font-size:11px; }
+.blackboxbold {font-weight:bold; }
+.barchart {width:756px; }
+
+
+.barchartform {width:750px; height:30px;  }
+.barchartdrop { margin-top:8px;}
+.barchartformcont {text-align:middle; padding-bottom:6px; margin-left:15px;}
+.barchartformcont1 {text-align:middle; padding-bottom:6px; margin-left:2px;}
+
+
+
+.barcharttable {width:756px; float:left; margin-top:5px;}
+.barchartimg {width:150px; float:left;  padding-top:10px;  padding-left:5px;font-size:11px; text-align:center; color:#1C0100;}
+.statusbar { width:100px; background-color:#76B900; height:15px; float:left; margin-top:3px; }
+.statusbarpercentage  { margin-right:3px;}
+.statusbar1 { width:60px; float:left; background-color:#76B900; height:15px; margin-top:3px; }
+/* Pagination starts here */
+#admin_pagination {
+	display:block;
+	text-align:left;
+	float:right;
+	height:22px;
+	line-height:21px;
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+}
+
+#admin_pagination a:link, #admin_pagination a:visited{
+	padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border:0px solid #cccccc;
+	margin-left:5px;
+	text-decoration:none;
+	background-color:#ffffff;
+	color:#0080C0;
+	width:22px;
+	font-weight:bold;
+}
+
+#admin_pagination a:hover {
+	border:0px solid #DBDBDB;
+	color:#0080C0;	
+	text-decoration:underline;
+}
+
+#admin_pagination .active_admin_link {
+	padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border:1px solid #000000;
+	margin-left:5px;
+	text-decoration:none;
+	background-color:#7D7D7D;
+	color:#FFFFFF;
+	cursor:default;
+}
+
+#admin_pagination .disabled_admin_pagination {
+	padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	border:1px solid #cccccc;
+	margin-left:10px;
+	text-decoration:none;
+	background-color:#F5F5F5;
+	color:#0080C0;
+	cursor:default;
+}
+
+/* Pagination ends here */
+
+/*div popup modal window style starts here */
+#mask {
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:100;
+  background-color:#000;
+  display:none;
+}
+  
+#boxes .window {
+  position:absolute;
+  left:0;
+  top:0;
+  width:760px;
+  height:500px;
+  display:none;
+  z-index:999;
+ 
+}
+
+#boxes1 .window {
+	position:absolute;
+	left:0;
+	top:0;
+	width:660px;
+	height:450px;
+	display:none;
+	z-index:9999;
+  
+ 
+}
+#boxes #dialog {
+  width:760px; 
+  height:500px;
+  overflow-y: scroll; overflow-x: hidden;
+}
+/*div popup modal window style starts here */
+
